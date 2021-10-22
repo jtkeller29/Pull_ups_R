@@ -16,11 +16,11 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Research Question to Answer with Regression
 
-How does housing tenure and structure affect neighborhood social ties?
+How, if at all, is housing tenure and structure related to neighborhood social ties?
 
 # Prior Research
 
-We have identified two studies that show a positive relationship between housing tenure and different measures of social engagement. Levitten-Reid and Matthew (2018), using a sample from Canada, find "a positive association between home ownership and forms of bonding social capital". Similarly, Werner and Klingborg (2010), in s study conducted of Stockholm, Sweden, found results indication that "residents forming tenant-owners associations have more trust in neighbors in the neighborhood."
+We have identified two studies that show a positive relationship between housing tenure and different measures of social engagement. Levitten-Reid and Matthew (2018), using a sample from Canada, find "a positive association between home ownership and forms of bonding social capital". Similarly, Werner and Klingborg (2010), in a study conducted of Stockholm, Sweden, found results indicating that "residents forming tenant-owners associations have more trust in neighbors in the neighborhood."
 
 
 # Sample Population and Variables
@@ -34,8 +34,6 @@ Our sample population includes adults in the US who participated in the IPUMS co
 ### 2. Participated in a service or civic organization
 
 ### 3. Trust in People in Neighborhood
-
-### 4. Metropolitan Area
 
 ## Continuous Variables
 
