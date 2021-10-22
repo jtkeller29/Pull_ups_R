@@ -16,23 +16,11 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Research Question to Answer with Regression
 
-Are people living in denser housing more likely to be civically and socially active?
+How does housing tenure and structure affect neighborhood social ties?
 
 # Prior Research
 
-Citations for two research articles that address a question related to the one you’ve identified
-
-### Potential Articles
-
-#### The Impact of Public Housing on Social Networks: A Natural Experiment
-https://ajph.aphapublications.org/doi/abs/10.2105/AJPH.2014.301949
-
-#### Shaping for Civic Life: Can Better Design Help Engage Citizens?
-https://archive.curbed.com/2017/6/22/15854608/urban-planning-community-engagement-litter
-
-#### The Effect of Cohousing Model on People's Health and Wellbeing: A Scoping Review
-https://publichealthreviews.biomedcentral.com/articles/10.1186/s40985-020-00138-1
-
+We have identified two studies that show a positive relationship between housing tenure and different measures of social engagement. Levitten-Reid and Matthew (2018), using a sample from Canada, find "a positive association between home ownership and forms of bonding social capital". Similarly, Werner and Klingborg (2010), in s study conducted of Stockholm, Sweden, found results indication that "residents forming tenant-owners associations have more trust in neighbors in the neighborhood."
 
 
 # Sample Population and Variables
@@ -41,15 +29,13 @@ Our sample population includes adults in the US who participated in the IPUMS co
 
 ## Categorial Variables
 
-### 1. Living in Public Housing
-
-#### whether or not the individual lives in public housing
+### 1. Housing Tenure
 
 ### 2. Participated in a service or civic organization
 
-#### whether or not the individual has participated in the last 12 months)
+### 3. Trust in People in Neighborhood
 
-### 4. Group Quarters Type
+### 4. Metropolitan Area
 
 ## Continuous Variables
 
@@ -60,6 +46,7 @@ Our sample population includes adults in the US who participated in the IPUMS co
 ### 2. Frequency of doing favors for neighbors and vice versa
 
 ### 3. Frequency of talking to neighbors
+
 
 
 
@@ -89,3 +76,16 @@ data <- read_ipums_micro(ddi)
 ```{r}
 civic <- read_csv("cps_00002.csv.gz")
 ```
+
+
+```{r}
+kable(head(data))
+```
+
+# References
+
+Werner, Inga Britt, and Kerstin Klingborg. "Studying Social Capital In Housing Neighborhoods-Does Tenure Matter?." (2010).
+
+Leviten-Reid, Catherine, and Rebecca A. Matthew. "Housing tenure and neighbourhood social capital." Housing, Theory and Society 35, no. 3 (2018): 300-328.
+
+Sarah Flood, Miriam King, Renae Rodgers, Steven Ruggles, J. Robert Warren and Michael Westberry. Integrated Public Use Microdata Series, Current Population Survey: Version 9.0 [dataset]. Minneapolis, MN: IPUMS, 2021. https://doi.org/10.18128/D030.V9.0
