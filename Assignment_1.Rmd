@@ -1,0 +1,91 @@
+---
+title: "Assignment 1: Research Questions"
+author: "Alicia Seeley, JT Keller, Alec Martinez"
+date: "10/20/2021"
+output: 
+  html_document:
+    theme: readable
+    toc: true
+    toc_depth: 4
+    toc_float: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Research Question to Answer with Regression
+
+Are people living in denser housing more likely to be civically and socially active?
+
+# Prior Research
+
+Citations for two research articles that address a question related to the one you’ve identified
+
+### Potential Articles
+
+#### The Impact of Public Housing on Social Networks: A Natural Experiment
+https://ajph.aphapublications.org/doi/abs/10.2105/AJPH.2014.301949
+
+#### Shaping for Civic Life: Can Better Design Help Engage Citizens?
+https://archive.curbed.com/2017/6/22/15854608/urban-planning-community-engagement-litter
+
+#### The Effect of Cohousing Model on People's Health and Wellbeing: A Scoping Review
+https://publichealthreviews.biomedcentral.com/articles/10.1186/s40985-020-00138-1
+
+
+
+# Sample Population and Variables
+
+Our sample population includes adults in the US who participated in the IPUMS community civic engagement survey in November 2013.
+
+## Categorial Variables
+
+### 1. Living in Public Housing
+
+#### whether or not the individual lives in public housing
+
+### 2. Participated in a service or civic organization
+
+#### whether or not the individual has participated in the last 12 months)
+
+### 4. Group Quarters Type
+
+## Continuous Variables
+
+### 1. Units in Structure
+
+#### number of units in individual's housing structure
+
+### 2. Frequency of doing favors for neighbors and vice versa
+
+### 3. Frequency of talking to neighbors
+
+
+
+
+# Data Import
+
+## Load Libraries
+
+```{r, message=FALSE}
+library(tidyverse)
+library(tidycensus)
+library(readxl)
+library(knitr)
+library(ipumsr)
+```
+
+
+## Read in .dat file from IPUMS
+
+```{r, message=FALSE, warning=FALSE}
+ddi <- read_ipums_ddi("cps_00001.xml")
+data <- read_ipums_micro(ddi)
+```
+
+## Read in .csv file
+
+```{r}
+civic <- read_csv("cps_00002.csv.gz")
+```
